@@ -69,7 +69,7 @@ customer_deviation <-function(clock,alpha1=0.88,lambda1=2.25,beta1=0.88,p_t_init
   return(mu1)
 }
 
-# This generates a list of geometries in megabytes, this is used later with an empiracally derived estimation to get volume in cubic cm.
+# This generates a list of geometries in megabytes, this is used later with an empirically derived estimation to get volume in cubic cm.
 geom_generator<-function(count){return(abs(rnorm(count,5,3.5)))}
 estimate_volume<-function(G){return(G/6.840)}
 
